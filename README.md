@@ -1,30 +1,12 @@
-# EpiOlive
+# React + Vite
 
-## Overview
-EpiOlive is a farm management system designed for olive tree farms, integrating modern technology with traditional agriculture. The platform helps farmers monitor essential data such as temperature, humidity, and soil moisture using IoT sensors. Additionally, it supports order management, farm analytics, and user authentication to streamline operations. By leveraging Laravel, MySQL, and Vue.js, EpiOlive ensures a scalable and efficient backend while maintaining high-performance data handling.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Tools & Technologies  
-EpiOlive is built using a **Dockerized Laravel environment** with **MySQL and Vue.js**. The backend utilizes Laravel's Eloquent ORM for relational data. The project is containerized with **Docker Compose**, ensuring easy deployment. Future expansions may include **IoT device integration**, and **cloud hosting** to enhance farm automation.
+Currently, two official plugins are available:
 
-### Database
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-<p align="center">
-    <img src="database.png" width=80%>
-</p>
+## Expanding the ESLint configuration
 
-**Relationships:**
-
-- A user can place multiple orders.
-- An order consists of multiple products (order_items).
-- Farm data is recorded daily.
-- Payments are linked to orders.
-- A user can write multiple reviews.
-
-### Controllers & Endpoints
-
-- Authentication (Laravel Sanctum or Passport)
-- Products & Categories
-- Orders & Payments
-- Farm Data Tracking
-- Reviews & Ratings
-- Notifications
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
